@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Rotate Image (No Backend)</title>
+    <title>Image Editing</title>
 </head>
 <body>
-    <h2>Rotate an Image</h2>
+    <h2>Image Editor</h2>
+    <p>Insert your image  here!</p>
     <input type="file" id="upload" accept="image/*">
-    <input type="number" id="angle" placeholder="Angle (degrees)">
-    <button onclick="rotateImage()">Rotate</button>
     <br><br>
+    <input type="radio" id="scalar">
+    <label for="scalar">Scalar scaling</label>
+    <input type="number" id="scale" placeholder="Scale (integer)">
+    <br><br>
+    <input type="radio" id="skew">
+    <label for="skew">Image skewing</label>
+    <input type="number" id="x_skew" placeholder="X (0<x<1)">
+    <input type="number" id="y_skew" placeholder="Y (0<x<1)">
+    <br><br>
+    <input type="radio" id="rotate">
+    <label for="skew">Image rotation</label>
+    <input type="number" id="angle" placeholder="Angle (degrees)">
+    <br><br>
+    <input type="radio" id="transpose">
+    <label for="skew">Image transpose</label>
+    <br>
+    <button onclick="rotateImage()">Edit</button>
     <canvas id="canvas"></canvas>
 </body>
 </html>

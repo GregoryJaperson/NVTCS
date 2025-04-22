@@ -135,6 +135,6 @@ def rotate_matrix_angle(A, a, bg=(255, 255, 255)):
 
 
 image = image_to_matrix("hell.png")
-j= skew_matrix(image, 0.2 , 0.5)
+j= skew_matrix(image, 1 , 0)
 matrix_to_image(j, "image.png")
 
