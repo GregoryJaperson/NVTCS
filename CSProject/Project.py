@@ -15,6 +15,11 @@ def image_to_matrix(image_path):
 
     return matrix
 
+def img_to_matrix(image_path):
+    img = Image.open(image_path)
+    pixels = list(img.getdata())
+    w, h = img.size
+    matrix = [pixels]
 
 def matrix_transpose(A):
     M = []
@@ -119,6 +124,7 @@ def rotate_matrix_angle(A, a, bg=(255, 255, 255)):
     a_r = math.radians(a)
     h, w = len(A), len(A[0])
     cos_r, sin_r = math.cos(a_r), math.sin(a_r)
+    #Explain rotation matrix
     new_w = int(abs(w * cos_r) + abs(h * sin_r))
     new_h = int(abs(w * sin_r) + abs(h * cos_r))
     new_m = [[bg for _ in range(new_w)] for _ in range(new_h)]
