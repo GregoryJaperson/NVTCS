@@ -1,4 +1,4 @@
-'''ex_list = [0, 1, 2, 3, 4] #Normal Array
+ex_list = [0, 1, 2, 3, 4] #Normal Array
 ex_tuple = (0, 1, 2, 3, 4) #non-mutable
 ex_set = {0, 1, 2, 3, 4} #Non-duplicate, un-ordered
 ex_dict = {'a':0, 'b':1, 'c':2, 'd':3} #Relation between keys and values, mutable value
@@ -20,7 +20,7 @@ friends_set = set(friends_heights)
 family_set = set(family_heights)
 combined_set = friends_set.union(family_set)
 
-print(friends_set, family_set, combined_set)'''
+print(friends_set, family_set, combined_set)
 list_dict = []
 rep = 1
 while rep == 1:
